@@ -1,0 +1,21 @@
+//Defining the pin where the LED is connected
+const int ledpin = 12;
+
+
+void setup()
+{
+  //Declaring the LED pin as an output
+  pinMode(ledpin, OUTPUT);
+}
+
+void loop()
+{
+  //Turning the LED on
+  digitalWrite(ledpin, HIGH);
+  //Waiting for a 500 milliseconds
+  delay(500); 
+  //Turning the LED off
+  digitalWrite(ledpin, LOW);
+  //Waiting for a 500 milliseconds
+  delay(500); 
+}
