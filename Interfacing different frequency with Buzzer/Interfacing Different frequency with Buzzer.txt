@@ -1,0 +1,30 @@
+//Declaring the pin for buzzer
+const int buzzerPin = 13;
+
+
+void setup()
+{
+  //Initializing the buzzerPin as the output
+  pinMode(buzzerPin, OUTPUT);
+}
+
+void loop()
+{
+  
+  //Produces 100 Hz tone
+  tone(buzzerPin,100);
+  // wait for the specified milli seconds
+  delay(1000);
+  //Produces 500 Hz tone
+  tone(buzzerPin,500);
+  // wait for the specified milli seconds
+  delay(1000);
+  //Produces 900 Hz tone
+  tone(buzzerPin,900);
+  // wait for the specified milli seconds
+  delay(1000);
+  //Produces no tone 
+  noTone(buzzerPin);
+  // wait for the specified milli seconds
+  delay(2000);
+}
