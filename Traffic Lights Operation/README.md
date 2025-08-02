@@ -19,10 +19,10 @@ This Arduino project simulates a **traffic signal system** using three LEDs—re
 
 Connect each LED to its corresponding pin via a resistor:
 
-Arduino Pin 13 ───► [220Ω Resistor] ───► [Red LED Anode]
-Arduino Pin 11 ───► [220Ω Resistor] ───► [Yellow LED Anode]
-Arduino Pin 9 ───► [220Ω Resistor] ───► [Green LED Anode]
-All LED Cathodes ───► GND
+- Arduino Pin 13 ───► [220Ω Resistor] ───► [Red LED Anode]
+- Arduino Pin 11 ───► [220Ω Resistor] ───► [Yellow LED Anode]
+- Arduino Pin 9 ───► [220Ω Resistor] ───► [Green LED Anode]
+- All LED Cathodes ───► GND
 
 ## 🧠 How It Works
 
