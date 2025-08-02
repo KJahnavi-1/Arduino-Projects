@@ -1,0 +1,41 @@
+//Declaring the pins to its respective LEDs
+const int red_ledPin = 13;
+const int yellow_ledPin = 11;
+const int green_ledPin = 9;
+
+//Delay time 
+const int time = 5000;
+
+void setup()
+  
+{
+  //Initializing the LED pins as the output
+  pinMode(red_ledPin, OUTPUT);
+  pinMode(yellow_ledPin, OUTPUT);
+  pinMode(green_ledPin, OUTPUT);
+  
+}
+
+void loop()
+  
+{
+  //Only the red LED turns ON remaining turns OFF
+  digitalWrite(red_ledPin, HIGH);
+  digitalWrite(yellow_ledPin, LOW);
+  digitalWrite(green_ledPin, LOW);
+  delay(time); //wait for a specifired time
+  
+  //only the yellow LED turns ON remaining turns OFF
+  digitalWrite(yellow_ledPin, HIGH);
+  digitalWrite(red_ledPin, LOW);
+  digitalWrite(green_ledPin, LOW);
+  delay(time);//wait for a specified time
+  
+  //Only green LED turns ON remaining turns OFF
+  digitalWrite(green_ledPin, HIGH);
+  digitalWrite(yellow_ledPin, LOW);
+  digitalWrite(red_ledPin, LOW);
+  delay(time);//wait for a specified time
+  
+  
+}
