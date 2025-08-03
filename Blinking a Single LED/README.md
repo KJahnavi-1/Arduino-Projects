@@ -18,4 +18,7 @@ This is a basic Arduino project demonstrating how to **blink a single LED** usin
 - Connect the **long leg (anode)** of the LED to **digital pin 12** through the **220Ω resistor**
 - Connect the **short leg (cathode)** of the LED to **GND**
 
+---
 
+
+[Watch the Vedio Representation of the Project](https://example.com)
