@@ -32,3 +32,7 @@ The code cycles through three LEDs with equal time delays:
 3. **Green LED ON** – Go
 
 Each state lasts for 5 seconds (5000 milliseconds).
+
+---
+
+[Watch the Vedio Explanation](https://drive.google.com/file/d/1COCRlVW71ievovEIkC4szjivnqxL3zwS/view?usp=drive_link)
