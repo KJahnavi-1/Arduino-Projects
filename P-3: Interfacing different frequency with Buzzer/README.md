@@ -16,4 +16,16 @@ This Arduino project demonstrates how to **generate tones of different frequenci
 
 ## 🔌 Circuit Connection
 
+- Arduino Pin 13 ───► Buzzer +ve
+- Buzzer -ve ───► GND
+- Resistor ───► 220Ω 
 
+---
+
+## 🧠 How It Works
+
+- The `tone(pin, frequency)` function is used to generate a square wave of the specified frequency on the given pin.
+- `noTone(pin)` stops the sound.
+- In this project, the buzzer cycles through tones of **100 Hz**, **500 Hz**, and **900 Hz**, each lasting **1 second**, followed by **2 seconds of silence**.
+
+---
