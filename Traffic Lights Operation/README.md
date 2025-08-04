@@ -35,4 +35,4 @@ Each state lasts for 5 seconds (5000 milliseconds).
 
 ---
 
-[Watch the Vedio Explanation](https://drive.google.com/file/d/1COCRlVW71ievovEIkC4szjivnqxL3zwS/view?usp=drive_link)
+[Watch the Vedio Explanation of the Project](https://drive.google.com/file/d/1COCRlVW71ievovEIkC4szjivnqxL3zwS/view?usp=drive_link)
