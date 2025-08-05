@@ -30,4 +30,4 @@ This Arduino project demonstrates how to **generate tones of different frequenci
 
 ---
 
-[Watch the Vedio Explanation of the Project](https://drive.google.com/file/d/1lsQtqTc447JCi7UK8ulAVlAs7znk1ZsO/view?usp=drive_link)
+[Watch the Video Explanation of the Project](https://drive.google.com/file/d/1lsQtqTc447JCi7UK8ulAVlAs7znk1ZsO/view?usp=drive_link)
