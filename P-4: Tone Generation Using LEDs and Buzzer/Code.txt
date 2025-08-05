@@ -1,0 +1,52 @@
+//Declaring the Pins 
+const int redPin = 13;
+const int yellowPin = 12;
+const int greenPin = 11;
+const int buzzerPin = 7;
+
+//Declaring the frequency to the respective LEDs
+const int red_tone = 500;
+const int yellow_tone = 1000;
+const int green_tone = 1500;
+
+//Declaring the delay time
+const int time = 2000;
+
+
+void setup()
+{
+  //Initializing the pins as the output
+  pinMode(redPin, OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(buzzerPin, OUTPUT);
+  
+}
+
+void loop()
+{
+  //Code for the red LED ON an OFF with a frequency
+  digitalWrite(redPin, HIGH);
+  tone(buzzerPin, red_tone);
+  delay(time);
+  digitalWrite(redPin, LOW);
+  noTone(buzzerPin);
+  delay(time);
+  
+  //Code for the yellow LED ON an OFF with a frequency
+  digitalWrite(yellowPin, HIGH);
+  tone(buzzerPin, yellow_tone);
+  delay(time);
+  digitalWrite(yellowPin, LOW);
+  noTone(buzzerPin);
+  delay(time);
+  
+  //Code for the green LED ON an OFF with a frequency
+  digitalWrite(greenPin, HIGH);
+  tone(buzzerPin, green_tone);
+  delay(time);
+  digitalWrite(greenPin, LOW);
+  noTone(buzzerPin);
+  delay(time);
+  
+}
