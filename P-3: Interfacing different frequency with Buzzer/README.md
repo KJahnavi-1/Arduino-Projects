@@ -29,3 +29,5 @@ This Arduino project demonstrates how to **generate tones of different frequenci
 - In this project, the buzzer cycles through tones of **100 Hz**, **500 Hz**, and **900 Hz**, each lasting **1 second**, followed by **2 seconds of silence**.
 
 ---
+
+[Watch the Vedio Explanation of the Project](https://drive.google.com/file/d/1lsQtqTc447JCi7UK8ulAVlAs7znk1ZsO/view?usp=drive_link)
