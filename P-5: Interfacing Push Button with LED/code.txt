@@ -1,0 +1,28 @@
+
+int val = 0;
+
+// Initialization
+void setup()
+{ 
+  pinMode(5, INPUT);
+  pinMode(13, OUTPUT);
+  
+}
+ 
+void loop()
+
+{
+  // Read the state of pin 5
+  val = digitalRead(5);
+  
+  // If the button is pressed
+  if(val == HIGH){
+    // Turn on the LED
+    digitalWrite(13, HIGH);
+  }
+  else{
+    // Turn off the LED
+    digitalWrite(13, LOW);
+  }
+  
+}
