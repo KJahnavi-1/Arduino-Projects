@@ -1,0 +1,46 @@
+// Defining the pins
+const int ledPin1 = 12;
+const int ledPin2 = 11;
+const int switchPin1 = 6;
+const int switchPin2 = 5;
+//Defining the state of the switches
+ int switchState1 = 0;
+ int switchState2 = 0;
+
+void setup()
+{
+  //Initializing the pins as INPUT and OUTPUT
+  pinMode(switchPin1, INPUT);
+  pinMode(switchPin2, INPUT);
+  pinMode(ledPin1, OUTPUT);
+  pinMode(ledPin2, OUTPUT);
+ 
+}
+
+void loop()
+{
+  //Providing the current state of the Switches 
+  switchState1 = digitalRead(switchPin1);
+  switchState2 = digitalRead(switchPin2);
+  
+  //if switch1 is pressed then the LED1 will turns on
+  if(switchState1 == HIGH)
+  {
+    digitalWrite(ledPin1, HIGH);
+  }
+  //if switch1 is released then the LED1 will turns off
+  else{
+    digitalWrite(ledPin1, LOW);
+  }
+  //if switch2 is pressed then the LED2 will turns on
+  if(switchState2 == HIGH)
+  {
+    digitalWrite(ledPin2, HIGH);
+  }
+  //if switch1 is released then the LED2 will turns off
+  else{
+    digitalWrite(ledPin2, LOW);
+  }
+  // Small delay for debouncing
+ delay(50); 
+}
