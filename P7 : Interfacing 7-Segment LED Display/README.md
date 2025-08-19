@@ -9,7 +9,7 @@ It sequentially displays numbers **0 to 9**, with each digit staying visible for
 
 - 1 x Arduino Uno (or compatible board)  
 - 1 x Common Cathode 7-Segment Display  
-- 7 x 220Ω resistors (current limiting for segments)  
+- 2 x 220Ω resistors   
 - Breadboard and jumper wires  
 
 ---
@@ -29,7 +29,6 @@ It sequentially displays numbers **0 to 9**, with each digit staying visible for
 | G       | 2           |
 | COM (Cathode) | GND   |
 
-⚡ Each segment is connected **through a 220Ω resistor** to avoid damaging the LED segments.
 
 ---
 
