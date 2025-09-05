@@ -1,0 +1,31 @@
+void setup() {
+  // Initialize Serial Monitor at 115200 baud rate
+  Serial.begin(115200);
+
+  // Set pin 13 as an OUTPUT (for the buzzer)
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  // Read the analog input from pin A0 (sensor connected here)
+  int sensorReading = analogRead(A0);
+
+  // Print the sensor value (0–1023) to the Serial Monitor
+  Serial.println(sensorReading);
+
+  // Map the sensor value to a frequency range (100 Hz to 2000 Hz)
+  int outputPitch = map(sensorReading, 0, 1023, 100, 2000);
+
+  // If the sensor value is not zero, generate a tone on the buzzer
+  if (sensorReading != 0) {
+    tone(13, outputPitch);  // Play frequency corresponding to sensor value
+  } 
+  // If the sensor value is zero, stop the tone
+  else {
+    noTone(13);  
+  }
+
+  // Small delay for stability (10 ms)
+  delay(10);
+}
+
