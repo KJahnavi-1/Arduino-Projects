@@ -1,1 +1,34 @@
+// Define motor driver input pins and slider switch pin
+const int motorPin1 = 13;  // Motor driver input 1 connected to Arduino pin 13
+const int motorPin2 = 12;  // Motor driver input 2 connected to Arduino pin 12
+const int slider = 6;      // Slider switch connected to Arduino pin 6
+
+void setup()
+{
+  // Set motor pins as OUTPUT
+  pinMode(motorPin1, OUTPUT);
+  pinMode(motorPin2, OUTPUT);
+
+  // Set slider switch pin as INPUT
+  pinMode(slider, INPUT);
+}
+
+void loop() {
+  // Read the state of the slider switch (HIGH or LOW)
+  int buttonState = digitalRead(slider);
+
+  // If the slider switch is ON (HIGH), rotate motor in one direction
+  if (buttonState == HIGH) {
+    digitalWrite(motorPin1, HIGH); // Motor input 1 HIGH
+    digitalWrite(motorPin2, LOW);  // Motor input 2 LOW
+  }
+  // If the slider switch is OFF (LOW), rotate motor in the opposite direction
+  else {
+    digitalWrite(motorPin1, LOW);  // Motor input 1 LOW
+    digitalWrite(motorPin2, HIGH); // Motor input 2 HIGH
+  }
+
+  // Small delay for stability
+  delay(1000);
+}
 
